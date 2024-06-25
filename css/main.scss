@@ -1,10 +1,22 @@
-@import "_variable";
-@import "_mixins";
+@import "_variable","_mixins";
 
 body {
   background-color: $bg-color;
   color: $text-color;
   font-family: $font-family;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 main {
@@ -42,6 +54,7 @@ header {
 
 /* First Container */
 .profile-image {
+  @include flex(row, center, center);
   img {
     width: 300px;
     height: 350px;
@@ -54,6 +67,7 @@ header {
 @include respond-to('tablet') {
   .first-container {
     @include flex(row, space-around);
+    overflow: hidden;
   }
 
   .text-content {
@@ -235,12 +249,13 @@ header {
 /* Footer */
 .footer {
   background-color: $footer-bg-color;
-  margin: 0 12px;
-  padding: 70px 20px;
-
+  padding: 50px 0;
+  
   @include respond-to('tablet') {
     @include flex(row, space-around);
-
+    margin: 0 1%;
+    padding: 70px 20px;
+    
     >div {
       width: 30%;
     }
@@ -250,7 +265,7 @@ header {
 .contact-info {
   h1 {
     font-size: 45px;
-    padding: 20px 0;
+    padding: 10px 0;
   }
 }
 
@@ -261,7 +276,7 @@ form {
 
   input,
   textarea {
-    width: 100%;
+    width: 98%;
     padding: 7px;
     background-color: transparent;
     color: wheat;

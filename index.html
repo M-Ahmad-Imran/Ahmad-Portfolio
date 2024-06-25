@@ -7,26 +7,28 @@
     <title>MuhammadAhmad.com</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header data-aos="fade-down">
         <div class="logo">Muhammad Ahmad</div>
         <nav>
             <ul>
                 <li><a href="https://github.com/M-Ahmad-Imran" class="fa fa-github"></a></li>
-                <li><a href="https://www.linkedin.com/in/muhammad-ahmad-b10b59207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin"></a></li>
+                <li><a href="https://www.linkedin.com/in/muhammad-ahmad-b10b59207?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        class="fa fa-linkedin"></a></li>
                 <li><a href="#" class="fa fa-twitter"></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="first-container">
-            <div class="text-content">
+        <section class="first-container" data-aos="fade-down">
+            <div class="text-content" data-aos="fade-left">
                 <h1>Nice to meet you! <br> I'm <span class="name">Muhammad Ahmad</span>.</h1> <br><br>
                 <h2>Welcome to IT Hub! <br>Looking for Expert IT Support?</h2>
             </div>
-            <div class="profile-image">
+            <div class="profile-image" data-aos="fade-right">
                 <img src="images/profileimage.jpg" alt="Profile">
             </div>
         </section>
@@ -38,7 +40,7 @@
             <div class="rings"></div>
             <div class="rings"></div>
         </div>
-        <section class="contact">
+        <section class="contact" data-aos="fade-down">
             <div class="description">
                 <p>
                     Based in the PAKISTAN, I'm a front-end developer
@@ -49,27 +51,27 @@
             </div>
         </section>
         <section class="languages">
-            <div class="lang">
+            <div class="lang" data-aos="fade-left">
                 <h1>HTML</h1>
                 <p>1 Year Experience</p>
             </div>
-            <div class="lang">
+            <div class="lang" data-aos="fade-down">
                 <h1>CSS</h1>
                 <p>1 Year Experience</p>
             </div>
-            <div class="lang">
+            <div class="lang" data-aos="fade-right">
                 <h1>JavaScript</h1>
                 <p>9 Months Experience</p>
             </div>
-            <div class="lang">
+            <div class="lang" data-aos="fade-left">
                 <h1>Accessibility</h1>
                 <p>1 Year Experience</p>
             </div>
-            <div class="lang">
+            <div class="lang" data-aos="fade-top">
                 <h1>React</h1>
                 <p>3 Months Experience</p>
             </div>
-            <div class="lang">
+            <div class="lang" data-aos="fade-right">
                 <h1>Tailwind</h1>
                 <p>1 Year Experience</p>
             </div>
@@ -81,15 +83,14 @@
             <div class="rings secondring"></div>
         </div>
         <section class="projects-container">
-            <div class="title">
+            <div class="title" data-aos="fade-down">
                 <h1>Projects</h1>
             </div>
             <div class="projects">
-                <div class="project">
+                <div class="project" data-aos="fade-right">
                     <div class="img-container">
                         <a href="https://m-ahmad-imran.github.io/Grade-Calculator/">
-                            <img src="images/gradeCalculator.jpg"
-                                alt="Grade Calculator">
+                            <img src="images/gradeCalculator.jpg" alt="Grade Calculator">
                         </a>
                     </div>
                     <div class="description">
@@ -98,11 +99,10 @@
                         <p>HTML CSS and JavaScript</p>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="fade-left">
                     <div class="img-container">
                         <a href="#">
-                            <img src="images/MachineMindMaps.jpg"
-                                alt="Machine Mindmaps">
+                            <img src="images/MachineMindMaps.jpg" alt="Machine Mindmaps">
                         </a>
                     </div>
                     <div class="description">
@@ -111,11 +111,10 @@
                         <p>HTML CSS and JavaScript</p>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="fade-right">
                     <div class="img-container">
                         <a href="https://m-ahmad-imran.github.io/To-Do-list/">
-                            <img src="images/todolist.webp"
-                                alt="TODO LIST">
+                            <img src="images/todolist.webp" alt="TODO LIST">
                         </a>
                     </div>
                     <div class="description">
@@ -124,11 +123,10 @@
                         <p>HTML CSS and JavaScript (Local Storage API)</p>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="fade-left">
                     <div class="img-container">
                         <a href="#">
-                            <img src="images/Javascript.jpg"
-                                alt="Course">
+                            <img src="images/Javascript.jpg" alt="Course">
                         </a>
                     </div>
                     <div class="description">
@@ -142,7 +140,7 @@
     </main>
     <footer>
         <div class="footer">
-            <div class="contact-info">
+            <div class="contact-info" data-aos="fade-right">
                 <h1>Contact</h1>
                 <p>
                     I would love to hear about your projects and how
@@ -150,7 +148,7 @@
                     to you as soon as possible.
                 </p>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" data-aos="fade-left">
                 <form action="#">
                     <label for="name">Name
                         <input type="text" id="name">
@@ -168,5 +166,13 @@
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+    duration: 1200,
+    offset: 200,
+    once: true, // animation only happens once
+});
+</script>
 
 </html>

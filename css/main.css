@@ -3,8 +3,20 @@ body {
   background-color: hsl(0, 0%, 8%);
   color: rgba(245, 245, 245, 0.747);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 main {
   margin: 0 7%;
 }
@@ -43,6 +55,12 @@ header .fa {
 }
 
 /* First Container */
+.profile-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .profile-image img {
   width: 300px;
   height: 350px;
@@ -58,6 +76,7 @@ header .fa {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+    overflow: hidden;
   }
   .text-content h1 {
     font-size: 62px;
@@ -204,8 +223,7 @@ header .fa {
 /* Footer */
 .footer {
   background-color: rgba(44, 41, 41, 0.4);
-  margin: 0 12px;
-  padding: 70px 20px;
+  padding: 50px 0;
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -213,6 +231,8 @@ header .fa {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+    margin: 0 1%;
+    padding: 70px 20px;
   }
   .footer > div {
     width: 30%;
@@ -221,7 +241,7 @@ header .fa {
 
 .contact-info h1 {
   font-size: 45px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 form label {
@@ -229,7 +249,7 @@ form label {
 }
 form input,
 form textarea {
-  width: 100%;
+  width: 98%;
   padding: 7px;
   background-color: transparent;
   color: wheat;
