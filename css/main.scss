@@ -1,5 +1,12 @@
 @import "_variable","_mixins";
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: $bg-color;
   color: $text-color;

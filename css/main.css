@@ -1,4 +1,11 @@
 /* Variables */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: hsl(0, 0%, 8%);
   color: rgba(245, 245, 245, 0.747);
