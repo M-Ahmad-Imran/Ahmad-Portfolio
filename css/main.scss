@@ -256,13 +256,12 @@ header {
 /* Footer */
 .footer {
   background-color: $footer-bg-color;
-  padding: 50px 0;
+  padding: 50px;
   
   @include respond-to('tablet') {
     @include flex(row, space-around);
     margin: 0 1%;
     padding: 70px 20px;
-    
     >div {
       width: 30%;
     }

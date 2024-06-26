@@ -230,7 +230,7 @@ header .fa {
 /* Footer */
 .footer {
   background-color: rgba(44, 41, 41, 0.4);
-  padding: 50px 0;
+  padding: 50px;
 }
 @media screen and (min-width: 768px) {
   .footer {
